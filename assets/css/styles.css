@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+
+:root {
+    font-size: 2vw;
+    --lato-font: 'Lato';
+    --roboto-font: 'Roboto';
+}
+
+* {
+    font-family: var(--lato-font);
+}
+
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+.thin-line {
+    border-bottom: .5rem solid navy;
+}
+
+.circle-img {
+    /*border-radius: 50%;*/
+    height: auto;
+    width: 10rem;
+    max-width: 100%;
+    padding-top: 5rem;
+}
+
+.details {
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, .8);
+    width: 60%;
+    margin: 1rem auto;
+}
+
+.heading_message {
+    font-family: var(--roboto-font);
+    font-size: 3.5vw;
+    color: white;
+}
+
+#about {
+    background-image: url("../img/five-bulb-lights-opacity.jpg");
+    /*background-position: top;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+}
+
+#about-me-message {
+    color: #e78400;
+    /*font-size: 1em;*/
+    /*animation-duration: 2s;*/
+    /*animation-delay: 2s;*/
+    /*animation-iteration-count: 3;*/
+}
