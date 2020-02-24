@@ -7,20 +7,15 @@
     --montserrat-font: 'Montserrat';
 }
 
-
 * {
     font-family: var(--lato-font);
 }
 
-/** {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
 .thin-line {
-    border-bottom: 1rem solid white;
+    border-bottom: 1rem solid rgba(22, 107, 180, 1.00);
 }
+
+/*-------------------About Section-------------------*/
 
 .circle-img {
     /*border-radius: 50%;*/
@@ -64,13 +59,13 @@
 }
 
 /*-------------------Experience Section-------------------*/
-.experience-heading {
+.experience-heading, .projects-heading {
     padding: 2rem 0;
     color: white;
     font-weight: bold;
 }
 
-.experience-heading-container {
+.experience-container {
    background-color: rgba(22, 107, 180, 1.00);
 }
 .experience-topic-container {
@@ -80,7 +75,7 @@
     color: black;
 }
 .experience-topic i {
-    color: #b08501;
+    color: #ffda6b;
     font-size: 5vw;
 }
 /*.experience-topic {*/
@@ -89,7 +84,7 @@
 .experience-topic h2 {
     padding: 1rem;
     font-weight: bold;
-    color: #e78400;
+    color: #ffda6b;
 }
 .experience-topic ul {
     list-style: none;
@@ -97,4 +92,36 @@
 }
 .experience-topic li {
     color: white;
+}
+
+/*-------------------Projects Section-------------------*/
+.projects-heading {
+    color: black;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 1.5rem;
+}
+
+/*.project-img {*/
+/*    height: auto;*/
+/*    max-width: 30vw;*/
+/*}*/
+
+
+
+#projects {
+    background-color: #f4faff;
+}
+#projects span {
+    font-family: var(--montserrat-font);
+    font-size: 3vw;
+    color: #e78400;
+}
+#projects video {
+    width: 100%;
+    height: auto;
 }
