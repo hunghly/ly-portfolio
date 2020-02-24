@@ -2,7 +2,7 @@
     $(document).ready(() => {
         const aboutMeEl = $("#about-me-message")[0];
         console.log(aboutMeEl.innerHTML);
-        const aboutMeMessages = ['am a USAF vet', 'am a software developer', 'love to learn', 'am also passionate about code', 'solve problems'];
+        const aboutMeMessages = ['am a USAF veteran', 'am a Software Developer', 'love to learn', 'am also passionate about coding', 'solve problems'];
 
         const displayAboutMe = () => {
             let i = 0;
@@ -13,9 +13,9 @@
                 else {
                     setTimeout(() => {
                         $(aboutMeEl).addClass('rollOut').removeClass('rollIn')
-                    }, 3000);
+                    }, 2500);
                 }
-            }, 3500)
+            }, 3000)
         };
 
 
