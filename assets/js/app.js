@@ -2,7 +2,7 @@
     $(document).ready(() => {
         const aboutMeEl = $("#about-me-message")[0];
         console.log(aboutMeEl.innerHTML);
-        const aboutMeMessages = ['am a USAF vet', 'am a software developer', 'also have a passion for learning', 'solve problems'];
+        const aboutMeMessages = ['am a USAF vet', 'am a software developer', 'love to learn', 'am also passionate about code', 'solve problems'];
 
         const displayAboutMe = () => {
             let i = 0;

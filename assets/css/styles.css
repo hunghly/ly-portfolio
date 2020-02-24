@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:900|Roboto&display=swap');
 
 :root {
     font-size: 2vw;
     --lato-font: 'Lato';
     --roboto-font: 'Roboto';
+    --montserrat-font: 'Montserrat';
 }
+/*body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    width: 100%;*/
+/*}*/
 
 * {
     font-family: var(--lato-font);
@@ -25,20 +31,21 @@
     height: auto;
     width: 10rem;
     max-width: 100%;
-    padding-top: 5rem;
+    padding-top: 1rem;
 }
 
 .details {
     padding: 1rem 0;
     background-color: rgba(0, 0, 0, .8);
-    width: 60%;
+    width: 70%;
     margin: 1rem auto;
 }
 
 .heading_message {
-    font-family: var(--roboto-font);
-    font-size: 3.5vw;
     color: white;
+}
+.heading_message span {
+    color: #e78400;
 }
 
 #about {
@@ -57,4 +64,26 @@
     /*animation-duration: 2s;*/
     /*animation-delay: 2s;*/
     /*animation-iteration-count: 3;*/
+}
+
+/*-------------------Experience Section-------------------*/
+.experience-heading {
+    padding: 1rem;
+    color: white;
+}
+
+.experience-heading-container {
+   background-color: navy;
+}
+.experience-topic-container {
+    font-family: var(--montserrat-font);
+    background-color: rgba(0, 0, 128, .6);
+    color: white;
+}
+.experience-topic {
+    padding: 1rem;
+}
+.experience-topic ul {
+    list-style: none;
+    padding: 0;
 }
