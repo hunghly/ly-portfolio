@@ -49,6 +49,19 @@
     height: auto;
 }
 
+#about i {
+    color: black;
+    margin: 1rem 1rem 0 1rem;
+    font-size: 4vw;
+}
+#about i:hover {
+    color: #e78400;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+    animation: tada 1s;
+    cursor: pointer;
+}
+
 #about-me-message {
     color: #e78400;
     font-weight: bold;

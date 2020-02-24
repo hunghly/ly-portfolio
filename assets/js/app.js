@@ -59,10 +59,10 @@
         };
 
 
+        /*------Event listeners-------*/
         window.addEventListener("resize", function (e) {
             setEvenProjects();
         });
-
         setEvenProjects();
         setEvenProjectHTML(currentView);
         displayAboutMe();
