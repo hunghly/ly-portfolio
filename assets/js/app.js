@@ -5,8 +5,9 @@
         const project2HeadingMarkup = `
                 <div class="col-sm-6 col-xs-12">
                     <p><span>Hangman</span><br>
-                        utilizes HTML canvas, game logic, JS modules to play Hangman.
+                        learned HTML canvas, game logic, dynamic HTML generation to create a simple Hangman app.
                     </p>
+                    <a href="https://github.com/hunghly/sample-portfolio-code/tree/master/hangman" target="_blank">code photos</a>
                 </div>`;
 
         const project2VideoMarkup = `
