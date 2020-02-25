@@ -9,7 +9,6 @@
                     </p>
                     <a href="https://github.com/hunghly/sample-portfolio-code/tree/master/hangman" target="_blank">code photos</a>
                 </div>`;
-
         const project2VideoMarkup = `
                 <div class="col-sm-6 col-xs-12">
                 <div class="embed-responsive embed-responsive-16by9">

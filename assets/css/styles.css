@@ -5,14 +5,18 @@
     --lato-font: 'Lato';
     --roboto-font: 'Roboto';
     --montserrat-font: 'Montserrat';
+    --main-blue-color: #0b69b7;
+    --main-orange-color: #e78400;
+    --main-light-blue-color: #a1d7ff;
+    --main-yellow-color: #ffc414;
 }
 
 * {
-    font-family: var(--lato-font);
+    font-family: var(--roboto-font);
 }
 
 .thin-line {
-    border-bottom: 2rem solid #0b69b7;
+    border-bottom: 2.5rem solid var(--main-blue-color);
 }
 
 /*-------------------About Section-------------------*/
@@ -28,21 +32,20 @@
 .details {
     padding: 1rem 0;
     background-color: rgba(0, 0, 0, .7);
-    width: 70%;
+    width: 75%;
     margin: 2rem auto;
 }
 
 .heading_message {
-    color: white;
+    color: var(--main-yellow-color);
 }
 
 .heading_message span {
-    color: #e78400;
+    color: var(--main-orange-color);
 }
 
 #about {
     background-image: url("../img/five-bulb-lights-opacity.jpg");
-    /*background-position: top;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,7 +60,7 @@
 }
 
 #about i:hover {
-    color: #e78400;
+    color: var(--main-orange-color);
     animation-iteration-count: 1;
     animation-delay: .5s;
     animation: jello 1s;
@@ -65,36 +68,29 @@
 }
 
 #about-me-message {
-    color: #e78400;
+    color: var(--main-orange-color);
     font-weight: bold;
 }
 
 /*-------------------Experience Section-------------------*/
 .experience-heading, .projects-heading {
-    padding: 2rem 0;
-    color: white;
+    padding: 1rem 0;
     font-weight: bold;
+    font-family: var(--lato-font);
 }
 
 .experience-container {
-    background-color: #0b69b7;
-}
-
-.experience-topic-container {
-    font-family: var(--montserrat-font);
-    background-color: #0b69b7;
-    color: black;
+    background-color: var(--main-blue-color);
+    color: var(--main-yellow-color);
 }
 
 .experience-topic i {
-    color: #ffda6b;
     font-size: 5vw;
 }
 
 .experience-topic h2 {
     padding: 1rem;
-    font-weight: bold;
-    color: #ffda6b;
+    font-family: var(--lato-font);
 }
 
 .experience-topic ul {
@@ -108,24 +104,25 @@
 
 /*-------------------Projects Section-------------------*/
 .projects-heading {
-    color: black;
+    color: var(--main-orange-color);
+    font-family: var(--lato-font);
 }
 
 .project-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1rem 1.5rem;
+    padding: .5rem 1rem;
 }
 
 #projects {
-    background-color: #f4faff;
+    background-color: var(--main-light-blue-color);
 }
 
 #projects span {
-    font-family: var(--montserrat-font);
     font-size: 3vw;
-    color: #e78400;
+    color: var(--main-orange-color);
+    font-family: var(--lato-font);
 }
 
 #projects iframe {
@@ -134,32 +131,46 @@
     height: 100%;
 }
 
+#projects a {
+    text-decoration: none;
+}
+
 /*-------------------Contact Section-------------------*/
 #contact {
-    background-color: #0b69b7;
+    background-color: var(--main-blue-color);
     padding: 1rem;
-    color: white;
 }
 
 #contact h2 {
     padding: 1rem;
+    color: var(--main-yellow-color);
 }
 
 #contact a {
     margin: 1rem;
-    padding: .7rem;
-    border-radius: 1rem;
-    background-color: transparent;
-    border: #e78400 solid .3rem;
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color: var(--main-light-blue-color);
+    border: black solid .2rem;
     outline: none;
     font-size: 3vw;
     text-decoration: none;
-    color: white;
 }
 
-#contact a:hover {
-    background-color: #e78400;
+#contact button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#contact a:hover, button:hover {
+    background-color: var(--main-orange-color);
+    border: black solid .2rem;
     animation-iteration-count: 1;
     animation-delay: .5s;
-    animation: tada 1s;
+    animation: pulse 1.5s;
+}
+
+#contact button:hover {
+
 }
