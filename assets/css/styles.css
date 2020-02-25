@@ -5,10 +5,9 @@
     --lato-font: 'Lato';
     --roboto-font: 'Roboto';
     --montserrat-font: 'Montserrat';
-    --main-blue-color: #0b69b7;
-    --main-orange-color: #e78400;
-    --main-light-blue-color: #a1d7ff;
-    --main-yellow-color: #ffc414;
+    --main-blue-color: #0b69b8;
+    --main-light-blue-color: #4b6b93;
+    --main-yellow-color: #ffc001;
 }
 
 * {
@@ -37,11 +36,11 @@
 }
 
 .heading_message {
-    color: var(--main-yellow-color);
+    color: white;
 }
 
 .heading_message span {
-    color: var(--main-orange-color);
+    color: var(--main-yellow-color);
 }
 
 #about {
@@ -60,7 +59,7 @@
 }
 
 #about i:hover {
-    color: var(--main-orange-color);
+    color: white;
     animation-iteration-count: 1;
     animation-delay: .5s;
     animation: jello 1s;
@@ -68,7 +67,7 @@
 }
 
 #about-me-message {
-    color: var(--main-orange-color);
+    color: var(--main-yellow-color);
     font-weight: bold;
 }
 
@@ -100,19 +99,26 @@
 
 .experience-topic li {
     color: white;
+    font-size: 2.5vw;
 }
 
 /*-------------------Projects Section-------------------*/
 .projects-heading {
-    color: var(--main-orange-color);
+    color: var(--main-yellow-color);
     font-family: var(--lato-font);
+    padding-bottom: 0;
 }
 
 .project-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: .5rem 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.project-container p {
+    font-size: 2.5vw;
+    color: white;
 }
 
 #projects {
@@ -120,8 +126,8 @@
 }
 
 #projects span {
-    font-size: 3vw;
-    color: var(--main-orange-color);
+    font-size: 3.5vw;
+    color: var(--main-yellow-color);
     font-family: var(--lato-font);
 }
 
@@ -129,10 +135,13 @@
     outline: none;
     width: 100%;
     height: 100%;
+    margin: .5rem;
 }
 
 #projects a {
     text-decoration: none;
+    color: var(--main-yellow-color);
+    font-size: 2.5vw;
 }
 
 /*-------------------Contact Section-------------------*/
@@ -142,7 +151,7 @@
 }
 
 #contact h2 {
-    padding: 1rem;
+    padding-bottom: .5rem;
     color: var(--main-yellow-color);
 }
 
@@ -150,8 +159,8 @@
     margin: 1rem;
     padding: .5rem;
     border-radius: 2rem;
-    background-color: var(--main-light-blue-color);
-    border: black solid .2rem;
+    background-color: transparent;
+    border: var(--main-yellow-color) solid .2rem;
     outline: none;
     font-size: 3vw;
     text-decoration: none;
@@ -161,16 +170,9 @@
     border: none;
     outline: none;
     background-color: transparent;
+    color: var(--main-yellow-color);
 }
 
 #contact a:hover, button:hover {
-    background-color: var(--main-orange-color);
-    border: black solid .2rem;
-    animation-iteration-count: 1;
-    animation-delay: .5s;
-    animation: pulse 1.5s;
-}
-
-#contact button:hover {
-
+    background-color: var(--main-light-blue-color);
 }
