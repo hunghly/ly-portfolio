@@ -12,9 +12,7 @@
 
         const project2VideoMarkup = `
                 <div class="col-sm-6 col-xs-12">
-                    <video controls>
-                    <source src="./assets/demos/HangmanDemo720.mov" type="video/mp4">
-                </video>
+                    <iframe src="https://www.youtube.com/embed/9TRkm07gctU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>`;
         let previousView = (window.outerWidth >= 576) ? 'default' : 'x-small';
         let currentView = (window.outerWidth >= 576) ? 'default' : 'x-small';
@@ -57,7 +55,6 @@
                 previousView = currentView;
             }
         };
-
 
         /*------Event listeners-------*/
         window.addEventListener("resize", function (e) {
