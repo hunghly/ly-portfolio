@@ -44,7 +44,7 @@
 }
 
 #about {
-    background-image: url("../img/five-bulb-lights-opacity.jpg");
+    background-image: url("../img/five-bulb-lights-1036936.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -59,7 +59,7 @@
 }
 
 #about i:hover {
-    color: white;
+    color: var(--main-yellow-color);
     animation-iteration-count: 1;
     animation-delay: .5s;
     animation: jello 1s;
