@@ -2,19 +2,9 @@
     $(document).ready(() => {
         const aboutMeEl = $("#about-me-message")[0];
         const aboutMeMessages = ['am a USAF veteran', 'am a Software Developer', 'love to learn', 'am also passionate about coding', 'solve problems'];
-        const project2HeadingMarkup = `
-                <div class="col-sm-6 col-xs-12">
-                    <p><span>Hangman</span><br>
-                        HTML canvas, game logic, dynamic HTML generation to create a simple Hangman app.
-                    </p>
-                    <a href="https://github.com/hunghly/sample-portfolio-code/tree/master/hangman" target="_blank">code photos</a>
-                </div>`;
-        const project2VideoMarkup = `
-                <div class="col-sm-6 col-xs-12">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.youtube.com/embed/9TRkm07gctU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                </div>`;
+        const project2HeadingMarkup = $("#project-2-heading")[0].outerHTML;
+        const project2CarouselMarkup = $("#project-2-carousel-container")[0].outerHTML;
+        const project2ModalMarkup = $("#project-2-modal")[0].outerHTML;
         let previousView = (window.outerWidth >= 576) ? 'default' : 'x-small';
         let currentView = (window.outerWidth >= 576) ? 'default' : 'x-small';
 
@@ -33,11 +23,11 @@
         };
 
         const xSmallView = () => {
-            $("#project-2").html(`${project2HeadingMarkup}${project2VideoMarkup}`);
+            $("#project-2").html(`${project2HeadingMarkup}${project2CarouselMarkup}${project2ModalMarkup}`);
         };
 
         const defaultView = () => {
-            $("#project-2").html(`${project2VideoMarkup}${project2HeadingMarkup}`);
+            $("#project-2").html(`${project2CarouselMarkup}${project2HeadingMarkup}${project2ModalMarkup}`);
         };
 
         const setEvenProjectHTML = (view) => {
