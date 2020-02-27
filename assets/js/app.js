@@ -1,7 +1,7 @@
 {
     $(document).ready(() => {
         const aboutMeEl = $("#about-me-message")[0];
-        const aboutMeMessages = ['am a USAF veteran', 'am a Software Developer', 'love to learn', 'am also passionate about coding', 'solve problems'];
+        const aboutMeMessages = ['am a USAF veteran', 'am Software Developer', 'also love to learn', 'have a passion for code', 'solve problems'];
         const project2HeadingMarkup = $("#project-2-heading")[0].outerHTML;
         const project2CarouselMarkup = $("#project-2-carousel-container")[0].outerHTML;
         const project2ModalMarkup = $("#project-2-modal")[0].outerHTML;

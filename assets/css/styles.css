@@ -30,8 +30,8 @@
 
 .details {
     padding: 1rem 0;
-    background-color: rgba(0, 0, 0, .7);
-    width: 75%;
+    background-color: rgba(0, 0, 0, .6);
+    width: 80%;
     margin: 2rem auto;
 }
 
@@ -41,6 +41,7 @@
 
 .heading_message span {
     color: var(--main-yellow-color);
+    letter-spacing: 2px;
 }
 
 #about {
@@ -84,7 +85,7 @@
 }
 
 .experience-topic i {
-    font-size: 5vw;
+    font-size: 8vw;
 }
 
 .experience-topic h2 {
@@ -99,7 +100,7 @@
 
 .experience-topic li {
     color: white;
-    font-size: 2.5vw;
+    font-size: 3vw;
 }
 
 /*-------------------Projects Section-------------------*/
@@ -119,9 +120,11 @@
     outline: none;
     color: white;
     background-color: var(--main-light-blue-color);
-    border: .1rem solid var(--main-blue-color);
+    border: .2rem solid white;
     padding: .3rem .5rem;
     border-radius: 1rem;
+    font-size: 3vw;
+    margin-bottom: 1.5rem;
 }
 .project-container button:hover {
     background-color: black;
@@ -129,7 +132,7 @@
 }
 
 .project-container p {
-    font-size: 2.5vw;
+    font-size: 3vw;
     color: white;
 }
 
@@ -154,6 +157,7 @@
 
 .modal-title {
     color: var(--main-yellow-color);
+    font-size: 4vw;
 }
 
 .modal-content {
@@ -174,7 +178,7 @@
 }
 
 #projects span {
-    font-size: 3.5vw;
+    font-size: 4vw;
     color: var(--main-yellow-color);
     font-family: var(--lato-font);
 }
@@ -186,17 +190,9 @@
     margin: .5rem;
 }
 
-/*#projects a {*/
-/*    text-decoration: none;*/
-/*    color: var(--main-yellow-color);*/
-/*    font-size: 2.5vw;*/
-/*}*/
-
 #projects a:hover {
     text-decoration: underline;
 }
-
-/*#pro*/
 
 /*-------------------Contact Section-------------------*/
 #contact {
