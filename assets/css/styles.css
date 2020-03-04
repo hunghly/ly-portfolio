@@ -21,11 +21,12 @@
 /*-------------------About Section-------------------*/
 
 .circle-img {
-    /*border-radius: 50%;*/
+    /*border-radius: 100%;*/
     height: auto;
     width: 10rem;
     max-width: 100%;
     padding-top: 2rem;
+
 }
 
 .details {
