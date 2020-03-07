@@ -5,6 +5,9 @@
         const project2HeadingMarkup = $("#project-2-heading")[0].outerHTML;
         const project2CarouselMarkup = $("#project-2-carousel-container")[0].outerHTML;
         const project2ModalMarkup = $("#project-2-modal")[0].outerHTML;
+        const project4HeadingMarkup = $("#project-4-heading")[0].outerHTML;
+        const project4CarouselMarkup = $("#project-4-carousel-container")[0].outerHTML;
+        const project4ModalMarkup = $("#project-4-modal")[0].outerHTML;
         let previousView = (window.outerWidth >= 576) ? 'default' : 'x-small';
         let currentView = (window.outerWidth >= 576) ? 'default' : 'x-small';
 
@@ -24,10 +27,12 @@
 
         const xSmallView = () => {
             $("#project-2").html(`${project2HeadingMarkup}${project2CarouselMarkup}${project2ModalMarkup}`);
+            $("#project-4").html(`${project4HeadingMarkup}${project4CarouselMarkup}${project4ModalMarkup}`);
         };
 
         const defaultView = () => {
             $("#project-2").html(`${project2CarouselMarkup}${project2HeadingMarkup}${project2ModalMarkup}`);
+            $("#project-4").html(`${project4CarouselMarkup}${project4HeadingMarkup}${project4ModalMarkup}`);
         };
 
         const setEvenProjectHTML = (view) => {
