@@ -56,6 +56,22 @@
         window.addEventListener("resize", function (e) {
             setEvenProjects();
         });
+        $("#project-1-modal").on('hidden.bs.modal', function (e) {
+            $("#project-1-modal iframe").attr("src", $("#project-1-modal iframe").attr("src"));
+        });
+        $("#project-2-modal").on('hidden.bs.modal', function (e) {
+            $("#project-2-modal iframe").attr("src", $("#project-2-modal iframe").attr("src"));
+        });
+        $("#project-3-modal").on('hidden.bs.modal', function (e) {
+            $("#project-3-modal iframe").attr("src", $("#project-3-modal iframe").attr("src"));
+        });
+        $("#project-4-modal").on('hidden.bs.modal', function (e) {
+            $("#project-4-modal iframe").attr("src", $("#project-4-modal iframe").attr("src"));
+        });
+        $("#project-5-modal").on('hidden.bs.modal', function (e) {
+            $("#project-5-modal iframe").attr("src", $("#project-5-modal iframe").attr("src"));
+        });
+
         setEvenProjects();
         setEvenProjectHTML(currentView);
         displayAboutMe();
