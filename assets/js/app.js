@@ -8,6 +8,9 @@
         const project4HeadingMarkup = $("#project-4-heading")[0].outerHTML;
         const project4CarouselMarkup = $("#project-4-carousel-container")[0].outerHTML;
         const project4ModalMarkup = $("#project-4-modal")[0].outerHTML;
+        const project6HeadingMarkup = $("#project-6-heading")[0].outerHTML;
+        const project6CarouselMarkup = $("#project-6-carousel-container")[0].outerHTML;
+        const project6ModalMarkup = $("#project-6-modal")[0].outerHTML;
         let previousView = (window.outerWidth >= 576) ? 'default' : 'x-small';
         let currentView = (window.outerWidth >= 576) ? 'default' : 'x-small';
 
@@ -28,11 +31,13 @@
         const xSmallView = () => {
             $("#project-2").html(`${project2HeadingMarkup}${project2CarouselMarkup}${project2ModalMarkup}`);
             $("#project-4").html(`${project4HeadingMarkup}${project4CarouselMarkup}${project4ModalMarkup}`);
+            $("#project-6").html(`${project6HeadingMarkup}${project6CarouselMarkup}${project6ModalMarkup}`);
         };
 
         const defaultView = () => {
             $("#project-2").html(`${project2CarouselMarkup}${project2HeadingMarkup}${project2ModalMarkup}`);
             $("#project-4").html(`${project4CarouselMarkup}${project4HeadingMarkup}${project4ModalMarkup}`);
+            $("#project-6").html(`${project6CarouselMarkup}${project6HeadingMarkup}${project6ModalMarkup}`);
         };
 
         const setEvenProjectHTML = (view) => {

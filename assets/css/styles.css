@@ -117,6 +117,7 @@
     align-items: center;
     padding: 1.5rem 1rem;
 }
+
 .project-container button {
     outline: none;
     color: white;
@@ -127,6 +128,7 @@
     font-size: 3vw;
     margin-bottom: 1.5rem;
 }
+
 .project-container button:hover {
     background-color: black;
     color: white;
@@ -147,7 +149,7 @@
 
 
 .modal {
-    background-color: rgba(0, 0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .modal-dialog {
@@ -172,7 +174,10 @@
     margin-top: 1rem;
 }
 
-
+.button-a, .button-a:hover {
+    text-decoration: none !important;
+    color: white;
+}
 
 #projects {
     background-color: var(--main-light-blue-color);
